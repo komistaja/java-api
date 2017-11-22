@@ -22,7 +22,7 @@ public class HelloController {
         } else {
             this.multi = Integer.parseInt(number);
         }
-        if(this.multi < 1000) {
+        if(this.multi < 1000 && this.multi > 0) {
             this.response = String.format(template, name);
             for (int i = 0; i < multi; i++) {
                 response += String.format(template, name);
